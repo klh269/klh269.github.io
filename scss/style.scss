@@ -378,8 +378,8 @@ h1, h2, h3, h4, h5,
 		}
 		.subheading{
 			font-size: 24px;
-			color: lighten($black,100%);
-			font-weight: 300;
+			color: lighten($black,90%);
+			font-weight: 600;
 		}
 		h1{
 			letter-spacing: 1px;
@@ -387,8 +387,8 @@ h1, h2, h3, h4, h5,
 		}
 		.btn-custom{
 			font-weight: 400;
-			color: lighten($black,70%);
-			border-bottom: 2px solid lighten($black,70%);
+			color: lighten($black,90%);
+			border-bottom: 2px solid lighten($black,90%);
 		}
 	}
 }
@@ -943,7 +943,7 @@ textarea.form-control {
 			li{
 				a{
 					span{
-						color: $black;
+						color: $white;
 					}
 				}
 			}
