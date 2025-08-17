@@ -378,7 +378,7 @@ h1, h2, h3, h4, h5,
 		}
 		.subheading{
 			font-size: 24px;
-			color: lighten($black,90%);
+			color: lighten($black,100%);
 			font-weight: 300;
 		}
 		h1{
@@ -943,7 +943,7 @@ textarea.form-control {
 			li{
 				a{
 					span{
-						color: $white;
+						color: $black;
 					}
 				}
 			}
