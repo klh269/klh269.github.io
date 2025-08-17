@@ -357,7 +357,7 @@ h1, h2, h3, h4, h5,
 		right: 0;
 		bottom: 0;
 		content: '';
-		opacity: 100.0;
+		opacity: 1.0;
 		background: $white;
 		z-index: 0;
 	}
@@ -378,7 +378,7 @@ h1, h2, h3, h4, h5,
 		}
 		.subheading{
 			font-size: 24px;
-			color: lighten($black,75%);
+			color: lighten($black,90%);
 			font-weight: 300;
 		}
 		h1{
