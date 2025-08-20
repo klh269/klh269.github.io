@@ -12,12 +12,40 @@
     </ul>
     <h2>Sliders for individual IF families:</h2>
     <ul>
-        <li><a href="interactive_plots/n_family_RAR.html">n-family</a></li>
+        <script>
+        function openGalaxyPlot(family, inputId) {
+            const gal = document.getElementById(inputId).value.trim();
+            if (gal) {
+                window.location.href = `../Renzo-UROP/plots/interactive_IF_plots/${family}_family/${gal}.html`;
+            }
+        }
+        </script>
+        <li style="margin-bottom: 7px;">
+            <label for="galaxy-input-n">n-family plots for galaxy:</label>
+            <input type="text" id="galaxy-input-n" name="galaxy-n" placeholder="Enter galaxy name">
+            <button onclick="openGalaxyPlot('n', 'galaxy-input-n')">Go</button>
+        </li>
+        <li style="margin-bottom: 7px;">
+            <label for="galaxy-input-delta">&delta;-family plots for galaxy:</label>
+            <input type="text" id="galaxy-input-delta" name="galaxy-delta" placeholder="Enter galaxy name">
+            <button onclick="openGalaxyPlot('delta', 'galaxy-input-delta')">Go</button>
+        </li>
+        <li style="margin-bottom: 7px;">
+            <label for="galaxy-input-gamma">&gamma;-family plots for galaxy:</label>
+            <input type="text" id="galaxy-input-gamma" name="galaxy-gamma" placeholder="Enter galaxy name">
+            <button onclick="openGalaxyPlot('gamma', 'galaxy-input-gamma')">Go</button>
+        </li>
+        <li style="margin-bottom: 7px;">
+            <label for="galaxy-input-alpha">&alpha;-family plots for galaxy:</label>
+            <input type="text" id="galaxy-input-alpha" name="galaxy-alpha" placeholder="Enter galaxy name">
+            <button onclick="openGalaxyPlot('alpha', 'galaxy-input-alpha')">Go</button>
+        </li>
+        <!-- <li><a href="interactive_plots/n_family_RAR.html">n-family</a></li>
         <li><a href="interactive_plots/delta_family_RAR.html">&delta;-family</a></li>
         <li><a href="interactive_plots/gamma_family_RAR.html">&gamma;-family</a>
             (equivalent to third IF family in <a href="https://ui.adsabs.harvard.edu/abs/2008ApJ...678..131M/abstract">Milgrom & Sanders</a> with &gamma; = 2&alpha;)</li>
         <li><a href="interactive_plots/alpha_family_RAR.html">&alpha;-family</a>
-            (second IF family in <a href="https://ui.adsabs.harvard.edu/abs/2008ApJ...678..131M/abstract">Milgrom & Sanders</a>)</li>
+            (second IF family in <a href="https://ui.adsabs.harvard.edu/abs/2008ApJ...678..131M/abstract">Milgrom & Sanders</a>)</li> -->
     </ul>
 </body>
 </html>
